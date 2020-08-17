@@ -1,0 +1,13 @@
+<h2>List of Current Sessions</h2>
+<div class="sessions-details-wrapper">
+  <br>
+  <a href="/sessions/new"><button type="submit" name="button" >Create New Session</button></a>
+  <br>
+  <% @sessions.each do |session| %>
+  <h3>Name: <%= session.name.capitalize %></h3>
+  <a href="/sessions/<%=session.id%>">Session Details</a>
+  <hr>
+  <% end %>
+  <a href="/sessions/new"><button type="submit" name="button" >Create New Session</button></a>
+  <br>
+</div>

@@ -1,0 +1,13 @@
+<h2 class="members-header">List of Current Members</h2>
+<div class="members-details-wrapper">
+  <br>
+  <a href="/members/new"><button type="submit" name="button" >Create New Member</button></a>
+  <br>
+  <% @members.each do |member| %>
+  <h3>Name: <%= member.format_name %></h3>
+  <a href="/members/<%=member.id%>">Member Details</a>
+  <hr>
+  <% end %>
+  <a href="/members/new"><button type="submit" name="button" >Create New Member</button></a>
+  <br>
+</div>

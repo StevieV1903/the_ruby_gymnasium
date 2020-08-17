@@ -1,0 +1,52 @@
+<h2>Edit Session</h2>
+<div class="edit-session-wrapper">
+
+  <form action="/sessions/<%= @session.id %>/update" method="post">
+
+    <label for="name-field">Name: </label>
+    <input type="text"
+    name="name"
+    id="name-field"
+    value="<%= @session.name %>"/>
+
+    <label for="type_select">Select Type:</label>
+    <select name="type" id="type_select">
+      <option value="Cardio">Cardio</option>
+      <option value="Core">Core</option>
+      <option value="Strength">Strength</option>
+      <option value="Toning">Toning</option>
+    </select>
+
+    <label for="duration-field">Duration (mins): </label>
+    <input
+    type="text"
+    name="duration"
+    id="duration-field"
+    value="<%= @session.duration %>"
+    />
+
+    <label for="day-select">Select Day:</label>
+    <select name="day" id="day-select">
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+      <option value="Saturday">Saturday</option>
+      <option value="Sunday">Sunday</option>
+    </select>
+
+    <label for="start-time">Start Time (24hrs): </label>
+    <input
+    type="text"
+    name="start_time"
+    id="start-time"
+    value="<%= @session.start_time %>"
+    />
+    <br>
+    <br>
+
+    <input type="submit" value="Update Session Details">
+
+  </form>
+</div>

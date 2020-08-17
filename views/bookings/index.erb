@@ -1,0 +1,12 @@
+<h2>List of Current Bookings</h2>
+<div class="bookings-details-wrapper">
+  <br>
+  <a href="/bookings/new"><button type="submit" name="button" >Create New Booking</button></a>
+  <br>
+  <% for booking in @bookings %>
+  <h3><%= booking.gym_member.format_name %> is booked into <%= booking.gym_session.name %> on <%= booking.gym_session.day %> at <%= booking.gym_session.start_time %> </h3>
+  <hr>
+  <% end %>
+  <a href="/bookings/new"><button type="submit" name="button" >Create New Booking</button></a>
+  <br>
+</div>

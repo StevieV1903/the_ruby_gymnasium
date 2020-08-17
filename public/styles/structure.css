@@ -1,0 +1,165 @@
+
+body {
+  background: #161a40 url('/images/gymnasium3.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: rgb(221, 220, 217);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Verdana, serif;
+  text-align: right;
+  margin-right: 20px;
+  /* padding: 10px;
+  padding-right: 25px; */
+
+}
+
+button[type="submit"]{
+  text-transform: uppercase;
+  font-family: verdana, serif;
+  background-color: skyblue;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: white;
+  cursor: pointer;
+
+}
+
+h1 {
+  color: #00ffd9
+
+}
+
+h2 {
+  margin-right: 24px;
+}
+
+#logo {
+  text-align: right;
+  font-family: Verdana, serif;
+  font-size: 45px;
+  text-transform: uppercase;
+  padding-right: 25px;
+}
+
+nav {
+  top: 0;
+  margin: 0;
+  padding: 0;
+  /* background-color: darkblue; */
+  width: 100%;
+  height: 100px;
+  align-items: center;
+
+
+}
+
+nav ul li {
+  margin: 15px;
+  text-transform: uppercase;
+  padding: 20px;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 26px;
+
+}
+
+a {
+  text-decoration: none;
+  color: skyblue;
+}
+
+a:hover {
+  color: darkred;
+  text-decoration: underline;
+}
+
+.home-wrapper {
+  padding-top: 225px;
+  padding-right: 25px;
+}
+
+.home-wrapper > h2 {
+  text-decoration: none;
+}
+
+.members-details-wrapper {
+  padding-top: 75px;
+  padding-right: 25px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Verdana, serif;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.members-details {
+  margin-right: 24px;
+}
+
+.sessions-details-wrapper {
+  padding-top: 100px;
+  padding-right: 25px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Verdana, serif;
+  text-align: right;
+}
+
+.bookings-details-wrapper {
+  padding-top: 100px;
+  padding-right: 25px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Verdana, serif;
+  text-align: right;
+}
+
+.new-member-wrapper {
+  padding-top: 200px;
+  padding-right: 25px;
+  justify-content: flex-end;
+}
+
+.new-session-wrapper {
+  padding-top: 200px;
+  padding-right: 25px;
+  justify-content: flex-end;
+}
+
+
+
+.confirmation-wrapper {
+  padding-top: 200px;
+  padding-right: 25px;
+}
+
+.edit-member-wrapper {
+  padding-top: 200px;
+  padding-right: 25px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Verdana, serif;
+  text-align: right;
+}
+
+.edit-session-wrapper {
+  padding-top: 200px;
+  padding-right: 25px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Verdana, serif;
+  text-align: right;
+}

@@ -1,0 +1,35 @@
+input[type="submit"] {
+  text-transform: uppercase;
+  font-family: verdana, serif;
+  background-color: skyblue;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  cursor: pointer;
+
+}
+
+input[type="text"] {
+  width: 150px;
+  text-transform: uppercase;
+  font-family: verdana, serif;
+  font-size: 16px;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+select {
+ width: 180px;
+ padding: 8px;
+ margin-right: 10px;
+ font-size: 16px;
+ font-family: 'Verdana', serif;
+ border: 1px solid #eee;
+ margin-bottom: 10px;
+}

@@ -1,0 +1,24 @@
+<h2>Edit Member Details</h2>
+<div class="edit-member-wrapper">
+
+  <form action="/members/<%= @member.id %>/update" method="post">
+
+    <label for="first-name">First Name: </label>
+    <input type="text" name="first_name" id="first-name" value="<%= @member.first_name %>">
+
+    <label for="last-name">Last Name: </label>
+    <input type="text" name="last_name" id="last-name" value="<%= @member.last_name %>">
+
+    <label for="date-of-birth">Date of Birth: </label>
+    <input type="text" name="date_of_birth" id="date-of-birth" value="<%= @member.date_of_birth %>">
+
+    <label for="address-field">Address: </label>
+    <input type="text" name="address" id="address-field" value="<%= @member.address %>">
+
+    <label for="post-code">Post Code: </label>
+    <input type="text" name="post_code" id="post-code" value="<%= @member.post_code %>">
+    <br>
+    <br>
+    <input type="submit" value="Update Member Details">
+  </form>
+</div>

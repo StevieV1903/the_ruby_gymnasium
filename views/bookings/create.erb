@@ -1,0 +1,5 @@
+<div class="confirmation-wrapper">
+  <h3>You have booked <%= @booking.gym_member.format_name %> into  <%= @booking.gym_session.name %> on <%= @booking.gym_session.day %> at <%= @booking.gym_session.start_time %>.</h3>
+  <h3><a class="btn btn--action" href="/bookings">Return to Bookings List</a></h3>
+  <hr>
+</div>

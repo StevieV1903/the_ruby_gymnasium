@@ -1,0 +1,26 @@
+<h2>Create a new Booking</h2>
+
+<form action="/bookings" method="post">
+  <label>
+    Select Member:
+    <select name="member_id">
+      <% for member in @members %>
+      <option value="<%= member.id %>"><%= member.format_name %></option>
+      <% end %>
+    </select>
+  </label>
+  <br>
+
+  <label>
+    Add to Session:
+    <select name="session_id">
+      <% for session in @sessions %>
+      <option value="<%= session.id %>"><%= session.name %></option>
+      <% end %>
+    </select>
+  </label>
+  <br>
+  <br>
+
+  <input class="btn btn--action" type='submit' value="Submit Booking">
+</form>

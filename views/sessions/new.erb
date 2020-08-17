@@ -1,0 +1,53 @@
+<h2>Create a new Session</h2>
+<div class="new-session-wrapper">
+
+  <form method="post" action="/sessions">
+
+    <label for="name-field">Name: </label>
+    <input
+    type="text"
+    name="name"
+    id="name-field"
+    placeholder="Session Name" required
+    />
+
+    <label for="type_select">Type:</label>
+    <select name="type" id="type_select">
+      <option value="Cardio">Cardio</option>
+      <option value="Core">Core</option>
+      <option value="Strength">Strength</option>
+      <option value="Toning">Toning</option>
+    </select>
+
+    <label for="duration-field">Duration: </label>
+    <input
+    type="text"
+    name="duration"
+    id="duration-field"
+    placeholder="mins" required
+    />
+
+    <label for="day-select">Day: </label>
+    <select name="day" id="day-select">
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+      <option value="Saturday">Saturday</option>
+      <option value="Sunday">Sunday</option>
+    </select>
+
+    <label for="start-time">Time (24hrs): </label>
+    <input
+    type="text"
+    name="start_time"
+    id="start-time"
+    placeholder="00:00" required
+    />
+    <br>
+    <br>
+
+    <input type="submit" value="Add New Session">
+  </form>
+</div>

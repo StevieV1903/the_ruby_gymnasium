@@ -1,0 +1,24 @@
+<h2>Session details</h2>
+<br>
+<h3><%= @session.name %> </h3>
+<p>Session Type: <%= @session.type %></p>
+<p>Duration: <%= @session.duration %> minutes</p>
+<p>Day: <%= @session.day %></p>
+<p>Start Time: <%= @session.start_time %></p>
+<hr>
+
+<% if @members_list == [] %>
+<p> No members have booked into <%= @session.name %> yet.</p>
+<%end%>
+
+<% for members in @members_list%>
+<p> <%= members.format_name %> is booked into this session. </p>
+<% end %>
+<hr>
+
+
+<a href="/sessions/<%= @session.id %>/edit">Edit Session Details</a>
+<br>
+<br>
+
+<form action="/sessions/<%= @session.id %>/delete" method="POST"><input type="submit" value="Delete Session"></form>

@@ -1,0 +1,25 @@
+<div class="members-details">
+  <h2>Members details</h2>
+<br>
+<h3><%= @member.format_name %> </h3>
+<p>Date of Birth: <%= @member.date_of_birth %></p>
+<p>Address: <%= @member.address %></p>
+<p>Post Code: <%= @member.post_code%></p>
+<hr>
+
+
+<% if @sessions_list == [] %>
+<p><%= @member.first_name %> has not booked into any classes yet.</p>
+<%end%>
+
+<% for sessions in @sessions_list%>
+<p><%= @member.first_name %> is booked into <%= sessions.name %> at <%= sessions.start_time %> on <%= sessions.day %></p>
+<% end %>
+<hr>
+
+<a href="/members/<%= @member.id %>/edit">Edit Member Details</a>
+<br>
+<br>
+
+<form action="/members/<%= @member.id %>/delete" method="POST"><input type="submit" value="Delete Member"></form>
+</div>
